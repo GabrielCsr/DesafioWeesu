@@ -7,6 +7,7 @@
   ```bash
   docker-compose up -d
   ```
+  Aguarde até completar totalmente a inicialização dos conteiners antes de ir para os próximos passos. 
 
 ### 2. **Executar o Micro Serviço(Responsável pela persistencia dos dados alterados na aplicação principal)**
   Acesse o diretório `/MS_MercadoLivre/bin/` e execute o arquivo `MS_MercadoLivre.exe`. Ao executar será configurado todos os dados do RabbitMQ e iniciará o consumo da fila de produtos.
