@@ -50,6 +50,33 @@ Após salvar as alterações, a aplicação continuará funcionando normalmente.
   - Dados referentes a chaves de autenticação, como `access-token` e `refresh-token` serão persistidos na tabela **tokens**.
   - Dados referentes a produtos serão persistidos na tabela **produtos**.
 ---
+## EndPoints Para Controle do Micro Serviço
+
+ ##  1. **EndPoint para controle do estado do micro serviço** 
+   ```bash
+   Get http://localhost:3333/service/status
+   ```
+  Possiveis resultados:
+   ```bash
+   {"status": "rodando", "mensagem": "Consumindo fila de produtos"}
+   ```
+   ```bash
+   {"status": "rodando", "mensagem": "Não consumindo fila de produtos"}
+   ```
+##  2. **EndPoint iniciar ou pausar o consumo da fila de produtos** 
+  `Post`   - Inicia o consumo da fila.
+  `Delete` - Pausa o consumo da fila.
+  ```bash
+  http://localhost:3333/produtos/fila/consumir
+  ```
+ Possiveis resultados:
+  ```bash
+  Consumo da fila de produtos iniciado com sucesso!
+  ```
+  ```bash
+  Consumo da fila interrompido com sucesso!
+  ```
+   
 
 ## Conclusão
 
