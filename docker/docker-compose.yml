@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    container_name: mysql_conteiner
+    environment:
+      MYSQL_ROOT_PASSWORD: desafio123    
+      MYSQL_DATABASE: desafio
+    ports:
+      - "3306:3306"
+    volumes:
+      - ../database/InitDB.sql:/docker-entrypoint-initdb.d/InitDB.sql
+    cap_add:
+      - SYS_NICE
+    networks:
+      - desafio-network
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq_conteiner
+    ports:
+      - 15672:15672 
+      - 5672:5672
+      - 61613:61613
+      - 61614:61614
+    command: >
+       sh -c "rabbitmq-plugins enable --offline rabbitmq_stomp &&
+              rabbitmq-server"
+    networks:
+      - desafio-network
+
+
+networks:
+  desafio-network:
+    driver: bridge

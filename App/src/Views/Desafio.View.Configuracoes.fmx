@@ -1,0 +1,496 @@
+object frmConfiguracoes: TfrmConfiguracoes
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 481
+  ClientWidth = 687
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object layConteudo: TLayout
+    Align = Client
+    Margins.Left = 8.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 8.000000000000000000
+    Margins.Bottom = 8.000000000000000000
+    Size.Width = 671.000000000000000000
+    Size.Height = 465.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recBackGround: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 671.000000000000000000
+      Size.Height = 465.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object layHeader: TLayout
+        Align = Top
+        Position.Y = 25.000000000000000000
+        Size.Width = 671.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SkLabel1: TSkLabel
+          Align = Left
+          Margins.Left = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Size.Width = 151.979995727539100000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          TextSettings.Font.Size = 24.000000000000000000
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Trailing
+          Words = <
+            item
+              Text = 'Configura'#231#245'es'
+            end>
+          object Layout3D1: TLayout3D
+            Height = 4.000000000000000000
+            Width = 5.000000000000000000
+          end
+        end
+      end
+      object layConfiguracoes: TLayout
+        Align = Client
+        Size.Width = 671.000000000000000000
+        Size.Height = 375.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle1: TRectangle
+          Align = Center
+          Size.Width = 456.000000000000000000
+          Size.Height = 283.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          object layCampos: TLayout
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Size.Width = 440.000000000000000000
+            Size.Height = 267.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout1: TLayout
+              Align = Top
+              Margins.Top = 20.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Rectangle2: TRectangle
+                Align = Left
+                Fill.Color = claWhite
+                Position.X = 136.000000000000000000
+                Size.Width = 252.000000000000000000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 0.200000002980232200
+                XRadius = 7.000000000000000000
+                YRadius = 8.000000000000000000
+                object edtIdAplicacao: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Password = True
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 246.000000000000000000
+                  Size.Height = 23.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object lblIdAplicacao: TSkLabel
+                Align = Left
+                Margins.Left = 32.000000000000000000
+                Margins.Right = 8.000000000000000000
+                Position.X = 32.000000000000000000
+                Size.Width = 96.000000000000000000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Words = <
+                  item
+                    Text = 'ID da Aplica'#231#227'o'
+                  end>
+              end
+            end
+            object Layout2: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 54.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object Rectangle3: TRectangle
+                Align = Left
+                Fill.Color = claWhite
+                Position.X = 135.860000610351600000
+                Size.Width = 252.000000000000000000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 0.200000002980232200
+                XRadius = 7.000000000000000000
+                YRadius = 8.000000000000000000
+                object edtChaveSecreta: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Password = True
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 246.000000000000000000
+                  Size.Height = 23.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object lblChaveSecreta: TSkLabel
+                Align = Left
+                Margins.Left = 32.000000000000000000
+                Margins.Right = 17.000000000000000000
+                Position.X = 32.000000000000000000
+                Size.Width = 86.860000610351560000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Words = <
+                  item
+                    Text = 'Chave Secreta'
+                  end>
+              end
+            end
+            object Layout3: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Rectangle4: TRectangle
+                Align = Left
+                Fill.Color = claWhite
+                Position.X = 135.029998779296900000
+                Size.Width = 252.000000000000000000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 0.200000002980232200
+                XRadius = 7.000000000000000000
+                YRadius = 8.000000000000000000
+                object edtUriRedirect: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 246.000000000000000000
+                  Size.Height = 23.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object lblUriRedirect: TSkLabel
+                Align = Left
+                Margins.Left = 32.000000000000000000
+                Margins.Right = 31.000000000000000000
+                Position.X = 32.000000000000000000
+                Size.Width = 72.029998779296880000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Words = <
+                  item
+                    Text = 'Uri Redirect'
+                  end>
+              end
+            end
+            object Layout4: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 122.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Rectangle5: TRectangle
+                Align = Left
+                Fill.Color = claWhite
+                Position.X = 134.440002441406300000
+                Size.Width = 252.000000000000000000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 0.200000002980232200
+                XRadius = 7.000000000000000000
+                YRadius = 8.000000000000000000
+                object edtCode: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Password = True
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Size.Width = 246.000000000000000000
+                  Size.Height = 23.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object lblCode: TSkLabel
+                Align = Left
+                Margins.Left = 32.000000000000000000
+                Margins.Right = 70.000000000000000000
+                Position.X = 32.000000000000000000
+                Size.Width = 32.439998626708980000
+                Size.Height = 29.000000000000000000
+                Size.PlatformDefault = False
+                Words = <
+                  item
+                    Text = 'Code'
+                  end>
+              end
+            end
+            object layButtons: TLayout
+              Align = Bottom
+              Position.Y = 217.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              object btnGerarCode: TSpeedButton
+                Position.X = 218.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 103.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Trimming = None
+                OnClick = btnGerarCodeClick
+                object Rectangle6: TRectangle
+                  Align = Client
+                  Fill.Color = claTan
+                  Locked = True
+                  HitTest = False
+                  Size.Width = 103.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 8.000000000000000000
+                  YRadius = 8.000000000000000000
+                  object SkLabel6: TSkLabel
+                    Align = Client
+                    Locked = True
+                    Size.Width = 103.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [Family, Style]
+                    TextSettings.Font.Size = 12.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'Gerar Code'
+                      end>
+                  end
+                end
+              end
+              object btnSalvar: TSpeedButton
+                Position.X = 328.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 103.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Trimming = None
+                OnClick = btnSalvarClick
+                object Rectangle7: TRectangle
+                  Align = Client
+                  Fill.Color = claGreen
+                  Locked = True
+                  HitTest = False
+                  Size.Width = 103.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 8.000000000000000000
+                  YRadius = 8.000000000000000000
+                  object SkLabel7: TSkLabel
+                    Align = Client
+                    Locked = True
+                    Size.Width = 103.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                    AutoSize = False
+                    StyledSettings = [Family, Style]
+                    TextSettings.Font.Size = 12.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Words = <
+                      item
+                        Text = 'Salvar'
+                      end>
+                  end
+                end
+              end
+            end
+          end
+        end
+        object Layout7: TLayout
+          Align = Bottom
+          Position.Y = 336.000000000000000000
+          Size.Width = 671.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SkLabel2: TSkLabel
+            Align = Right
+            Position.X = 383.149993896484400000
+            Size.Width = 254.850006103515600000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            Words = <
+              item
+                Text = 'Passo a Passo para gerar as informa'#231#245'es: '
+              end>
+          end
+          object btnPassoAPasso: TSkSvg
+            Align = MostRight
+            HitTest = True
+            Margins.Right = 10.000000000000000000
+            Position.X = 638.000000000000000000
+            Size.Width = 23.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = btnPassoAPassoClick
+            Svg.Source = 
+              '<?xml version="1.0" encoding="UTF-8"?>'#13#10'<!DOCTYPE svg PUBLIC "-/' +
+              '/W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/s' +
+              'vg11.dtd">'#13#10'<svg xmlns="http://www.w3.org/2000/svg" version="1.1' +
+              '" width="512px" height="512px" style="shape-rendering:geometricP' +
+              'recision; text-rendering:geometricPrecision; image-rendering:opt' +
+              'imizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink=' +
+              '"http://www.w3.org/1999/xlink">'#13#10'<g><path style="opacity:1" fill' +
+              '="#fca84c" d="M 232.5,-0.5 C 247.833,-0.5 263.167,-0.5 278.5,-0.' +
+              '5C 316.722,3.35166 352.388,15.0183 385.5,34.5C 387.607,44.9461 3' +
+              '90.107,55.6127 393,66.5C 408.182,154.11 388.182,232.443 333,301.' +
+              '5C 312.083,325.993 287.917,346.326 260.5,362.5C 252.344,362.009 ' +
+              '244.344,362.842 236.5,365C 230.573,368.086 227.24,372.919 226.5,' +
+              '379.5C 163.78,404.241 100.113,406.908 35.5,387.5C 15.4786,353.77' +
+              ' 3.47863,317.436 -0.5,278.5C -0.5,263.167 -0.5,247.833 -0.5,232.' +
+              '5C 10.3875,142.857 54.7208,75.3573 132.5,30C 163.971,13.3053 197' +
+              '.304,3.1386 232.5,-0.5 Z"/></g>'#13#10'<g><path style="opacity:0.998" ' +
+              'fill="#f9973e" d="M 385.5,34.5 C 459.283,80.0211 501.283,146.021' +
+              ' 511.5,232.5C 511.5,247.833 511.5,263.167 511.5,278.5C 500.612,3' +
+              '68.144 456.279,435.644 378.5,481C 347.029,497.695 313.696,507.86' +
+              '1 278.5,511.5C 263.167,511.5 247.833,511.5 232.5,511.5C 147.013,' +
+              '501.276 81.3463,459.943 35.5,387.5C 100.113,406.908 163.78,404.2' +
+              '41 226.5,379.5C 226.334,388.173 226.5,396.84 227,405.5C 227.447,' +
+              '412.566 230.947,417.399 237.5,420C 250.273,422.328 262.94,421.99' +
+              '5 275.5,419C 279.058,417.108 281.558,414.275 283,410.5C 284.522,' +
+              '399.21 284.856,387.877 284,376.5C 279.735,366.109 271.902,361.44' +
+              '2 260.5,362.5C 287.917,346.326 312.083,325.993 333,301.5C 388.18' +
+              '2,232.443 408.182,154.11 393,66.5C 390.107,55.6127 387.607,44.94' +
+              '61 385.5,34.5 Z"/></g>'#13#10'<g><path style="opacity:1" fill="#fffefd' +
+              '" d="M 249.5,95.5 C 279.508,92.4557 307.174,98.9557 332.5,115C 3' +
+              '63.51,138.212 374.343,168.712 365,206.5C 359.075,223.429 348.908' +
+              ',237.262 334.5,248C 321.672,256.915 308.672,265.581 295.5,274C 2' +
+              '81.565,284.375 275.732,298.208 278,315.5C 272.51,332.498 261.01,' +
+              '338.998 243.5,335C 229.57,328.318 223.57,317.151 225.5,301.5C 22' +
+              '4.518,281.141 231.518,264.141 246.5,250.5C 258.964,240.099 272.2' +
+              '97,230.932 286.5,223C 295.38,217.121 302.546,209.621 308,200.5C ' +
+              '316.623,174.911 308.123,158.078 282.5,150C 259.452,144.303 239.2' +
+              '86,149.47 222,165.5C 216.085,173.33 211.752,181.997 209,191.5C 1' +
+              '99.029,206.044 185.862,209.877 169.5,203C 155.35,192.879 151.516' +
+              ',179.712 158,163.5C 168.685,136.148 187.518,116.648 214.5,105C 2' +
+              '26.036,100.868 237.703,97.7015 249.5,95.5 Z"/></g>'#13#10'<g><path sty' +
+              'le="opacity:1" fill="#fffefd" d="M 260.5,362.5 C 271.902,361.442' +
+              ' 279.735,366.109 284,376.5C 284.856,387.877 284.522,399.21 283,4' +
+              '10.5C 281.558,414.275 279.058,417.108 275.5,419C 262.94,421.995 ' +
+              '250.273,422.328 237.5,420C 230.947,417.399 227.447,412.566 227,4' +
+              '05.5C 226.5,396.84 226.334,388.173 226.5,379.5C 227.24,372.919 2' +
+              '30.573,368.086 236.5,365C 244.344,362.842 252.344,362.009 260.5,' +
+              '362.5 Z"/></g>'#13#10'</svg>'
+          end
+        end
+      end
+      object Layout5: TLayout
+        Align = MostTop
+        Size.Width = 671.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Layout6: TLayout
+          Align = MostRight
+          Position.X = 640.000000000000000000
+          Size.Width = 31.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object btnFechar: TSpeedButton
+            Align = Bottom
+            Position.Y = 5.000000000000000000
+            Size.Width = 31.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Trimming = None
+            OnClick = btnFecharClick
+            object imgFechar: TSkSvg
+              Align = Client
+              Locked = True
+              Size.Width = 31.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<?xml version="1.0" encoding="UTF-8"?>'#13#10'<!DOCTYPE svg PUBLIC "-/' +
+                '/W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/s' +
+                'vg11.dtd">'#13#10'<svg xmlns="http://www.w3.org/2000/svg" version="1.1' +
+                '" width="512px" height="512px" style="shape-rendering:geometricP' +
+                'recision; text-rendering:geometricPrecision; image-rendering:opt' +
+                'imizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink=' +
+                '"http://www.w3.org/1999/xlink">'#13#10'<g><path style="opacity:1" fill' +
+                '="#dc4632" d="M 270.5,47.5 C 187.15,58.2469 128.317,101.914 94,1' +
+                '78.5C 68.0265,250.637 77.0265,317.97 121,380.5C 159.214,428.835 ' +
+                '209.047,456.501 270.5,463.5C 193.88,466.43 132.38,437.764 86,377' +
+                '.5C 42.9161,313.145 35.5828,244.812 64,172.5C 96.4701,103.058 15' +
+                '0.637,61.8908 226.5,49C 241.133,47.6724 255.8,47.1724 270.5,47.5' +
+                ' Z"/></g>'#13#10'<g><path style="opacity:0.999" fill="#f96450" d="M 27' +
+                '0.5,47.5 C 352.83,56.3815 411.663,98.0482 447,172.5C 475.417,244' +
+                '.812 468.084,313.145 425,377.5C 386.438,428.876 334.938,457.543 ' +
+                '270.5,463.5C 209.047,456.501 159.214,428.835 121,380.5C 77.0265,' +
+                '317.97 68.0265,250.637 94,178.5C 128.317,101.914 187.15,58.2469 ' +
+                '270.5,47.5 Z"/></g>'#13#10'<g><path style="opacity:1" fill="#f0efef" d' +
+                '="M 189.5,144.5 C 190.552,144.351 191.552,144.517 192.5,145C 213' +
+                '.04,165.874 233.874,186.374 255,206.5C 276.333,185.833 297.667,1' +
+                '65.167 319,144.5C 334.959,159.458 350.626,174.792 366,190.5C 366' +
+                '.667,191.167 366.667,191.833 366,192.5C 344.986,213.347 324.153,' +
+                '234.347 303.5,255.5C 324.5,276.833 345.5,298.167 366.5,319.5C 35' +
+                '0.833,335.5 335.167,351.5 319.5,367.5C 298.14,346.306 276.64,325' +
+                '.306 255,304.5C 233.667,325.167 212.333,345.833 191,366.5C 175.0' +
+                '41,351.542 159.374,336.208 144,320.5C 143.333,319.833 143.333,31' +
+                '9.167 144,318.5C 165.014,297.653 185.847,276.653 206.5,255.5C 18' +
+                '5.5,234.167 164.5,212.833 143.5,191.5C 158.855,175.813 174.188,1' +
+                '60.146 189.5,144.5 Z"/></g>'#13#10'</svg>'
+            end
+          end
+        end
+      end
+    end
+  end
+end

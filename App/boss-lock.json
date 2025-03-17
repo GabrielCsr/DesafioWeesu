@@ -1,0 +1,38 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2025-03-15T17:59:29.7940404-03:00",
+	"installedModules": {
+		"github.com/viniciussanchez/restrequest4delphi": {
+			"name": "restrequest4delphi",
+			"version": "v4.0.21",
+			"hash": "1d1d4b3f2bd238566dae0c88256a8eb5",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/brendenwalker/delphi_amqp": {
+			"name": "delphi_amqp",
+			"version": "main",
+			"hash": "fb3a5cbc2475ed78b6339efb910f88f3",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/danieleteti/delphistompclient": {
+			"name": "delphistompclient",
+			"version": "master",
+			"hash": "cb6937b7758328924988f916cc4ddbbb",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/viniciussanchez/restrequest4delphi": {
+			"name": "restrequest4delphi",
+			"version": "v4.0.21",
+			"hash": "1d1d4b3f2bd238566dae0c88256a8eb5",
+			"artifacts": {},
+			"failed": false,
+			"changed": true
+		}
+	}
+}

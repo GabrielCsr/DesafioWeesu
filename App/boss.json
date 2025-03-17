@@ -1,0 +1,14 @@
+{
+	"name": "Desafio",
+	"description": "Desafio Weesu",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/viniciussanchez/restrequest4delphi": "^v4.0.21",
+		"https://github.com/brendenwalker/delphi_amqp": ">0.0.0",
+		"https://github.com/danieleteti/delphistompclient": ">0.0.0",
+		"https://github.com/viniciussanchez/restrequest4delphi": "^v4.0.21"
+	}
+}

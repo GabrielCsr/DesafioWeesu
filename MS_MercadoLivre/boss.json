@@ -1,0 +1,14 @@
+{
+	"name": "MS_MercadoLivre",
+	"description": "Micro servico de persistencia dos produtos",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.1.6",
+		"github.com/hashload/jhonson": "^1.1.9",
+		"https://github.com/brendenwalker/delphi_amqp": ">0.0.0",
+		"https://github.com/danieleteti/delphistompclient": ">0.0.0"
+	}
+}
