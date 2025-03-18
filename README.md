@@ -80,7 +80,7 @@ Após salvar as alterações, a aplicação continuará funcionando normalmente.
    
 
 ## Considerações Técnicas
-  - O projeto foi desenvolvido inteiramente em Delphi 12.
+  - O projeto foi desenvolvido inteiramente em Delphi 12 utilizando a arquitetura MVC.
   - O microserviço utiliza o Horse como framework.
   - Banco de dados: MySQL 5.7.
   - Message Broker: RabbitMQ, com AMQP para configuração e STOMP para consumo de filas.
