@@ -36,7 +36,7 @@ A aplicação fará uma requisição à API do Mercado Livre e listará os produ
 
 ### 3. **Editar Produto**
 
-- Para editar um produto encontrado, clique na celulá que deseja alterar, como **nome** ou **preço** e digite o valor desejado.
+- Para editar um produto encontrado, clique na celula que deseja alterar, como **nome** ou **preço** e digite o valor desejado.
 
 ### 4. **Persistência Assíncrona**
 
@@ -79,6 +79,9 @@ Após salvar as alterações, a aplicação continuará funcionando normalmente.
   ```
    
 
-## Conclusão
-
-Com este sistema, você consegue realizar buscas eficientes na API do Mercado Livre, editar os detalhes dos produtos e garantir que as alterações sejam salvas no banco de dados de maneira assíncrona, sem sobrecarregar o sistema. A implementação com **RabbitMQ** e **microserviço utilizando Horse** permite uma escalabilidade e desempenho ideais para aplicações que necessitam de persistência assíncrona.
+## Considerações Técnicas
+  - O projeto foi desenvolvido inteiramente em Delphi 12.
+  - O microserviço utiliza o Horse como framework.
+  - Banco de dados: MySQL 5.7.
+  - Message Broker: RabbitMQ, com AMQP para configuração e STOMP para consumo de filas.
+  - Docker foi utilizado para facilitar a configuração do banco de dados e do Message Broker.
